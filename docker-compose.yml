@@ -10,7 +10,8 @@ services:
     volumes:
       - db:/var/lib/mysql
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: dbname
+      MYSQL_ROOT_PASSWORD: 'yes'
     security_opt:
       - seccomp:unconfined
   backend:
